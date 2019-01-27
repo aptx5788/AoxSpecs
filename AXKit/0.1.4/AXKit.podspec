@@ -22,31 +22,32 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AXKit/**/**/*.{h,m}'
+  s.source_files = 'AXKit/*.{h,m}'
 
   s.subspec 'AXUIKit' do |ss|
-    ss.source_files = 'AXKit/AXUIKit/**/*.{h,m}'
+    ss.source_files = 'AXUIKit/**/*.{h,m}'
     ss.requires_arc = true
   end
 
   s.subspec 'AXObject' do |ss|
-    ss.source_files = 'AXKit/AXObject/**/*.{h,m}'
+    ss.source_files = 'AXObject/**/*.{h,m}'
     ss.requires_arc = true
 
-        ss.subspec 'AXDefine' do |sss|
-            sss.source_files = 'AXKit/AXObject/AXDefine/*.{h,m}'
-            sss.requires_arc = true
-        end
+    ss.subspec 'AXDefine' do |sss|
+       sss.source_files = 'AXDefine/*.{h,m}'
+       sss.requires_arc = true
+    end
 
-        ss.subspec 'AXSingleton' do |sss|
-            sss.source_files = 'AXKit/AXObject/AXSingleton/*.{h,m}'
-            sss.requires_arc = true
-        end
+    ss.subspec 'AXSingleton' do |sss|
+       sss.source_files = 'AXSingleton/*.{h,m}'
+       sss.requires_arc = true
+    end
 
-        ss.subspec 'AXNewFeatureTool' do |sss|
-            sss.source_files = 'AXKit/AXObject/AXNewFeatureTool/*.{h,m}'
-            sss.requires_arc = true
-        end
-   end
+    ss.subspec 'AXNewFeatureTool' do |sss|
+       sss.source_files = 'AXNewFeatureTool/*.{h,m}'
+       sss.requires_arc = true
+    end
+
+  end
 
 end
