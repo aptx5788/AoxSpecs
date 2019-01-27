@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
     ss.source_files = 'AXKit/AXUIKit/*.{h,m}'
     ss.requires_arc = true
     ss.subspec 'AXButton' do |sss|
-       sss.source_files = 'AXKit/AXObject/AXButton/*.{h,m}'
+       sss.source_files = 'AXKit/AXUIKit/AXButton/*.{h,m}'
        sss.requires_arc = true
     end
   end
