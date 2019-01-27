@@ -22,15 +22,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-#s.source_files = 'AXKit/*.{h,m}'
+  s.source_files = 'AXKit/**'
 
   s.subspec 'AXUIKit' do |ss|
-# ss.source_files = 'AXKit/AXUIKit/**/*.{h,m}'
+    ss.source_files = 'AXKit/AXUIKit/**'
     ss.requires_arc = true
   end
 
   s.subspec 'AXObject' do |ss|
-#ss.source_files = 'AXKit/AXObject/**/*.{h,m}'
+    ss.source_files = 'AXKit/AXObject/**'
     ss.requires_arc = true
 
     ss.subspec 'AXDefine' do |sss|
