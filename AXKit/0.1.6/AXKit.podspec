@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AXKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.6'
   s.summary          = 'AXKit is kind'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -25,8 +25,12 @@ TODO: Add long description of the pod here.
   s.source_files = 'AXKit/*.{h,m}'
 
   s.subspec 'AXUIKit' do |ss|
-    ss.source_files = 'AXKit/AXUIKit/**/*.{h,m}'
+    ss.source_files = 'AXKit/AXUIKit/*.{h,m}'
     ss.requires_arc = true
+    ss.subspec 'AXButton' do |sss|
+       sss.source_files = 'AXKit/AXObject/AXButton/*.{h,m}'
+       sss.requires_arc = true
+    end
   end
 
   s.subspec 'AXObject' do |ss|
