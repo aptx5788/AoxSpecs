@@ -40,7 +40,7 @@ TODO: Add long description of the pod here.
   s.subspec 'AXObject' do |ss|
     ss.source_files = 'AXKit/AXObject/**/*.{h,m}'
     ss.requires_arc = true
-  end
+
         ss.subspec 'AXDefine' do |sss|
             sss.source_files = 'AXKit/AXObject/AXDefine/**/*.{h,m}'
             sss.requires_arc = true
@@ -55,5 +55,6 @@ TODO: Add long description of the pod here.
             sss.source_files = 'AXKit/AXObject/AXNewFeatureTool/**/*.{h,m}'
             sss.requires_arc = true
         end
+   end
 
 end
