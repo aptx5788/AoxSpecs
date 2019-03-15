@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
     
     s.ios.deployment_target = '8.0'
 
-    s.source_files = 'AXKit/**/**/*.{h,m}'
+    s.source_files = 'AXKit/*.{h,m}'
     
     s.subspec 'AXUIKit' do |ss|
-        ss.source_files = 'AXKit/AXUIKit/**/*.{h,m}'
+        ss.source_files = 'AXKit/AXUIKit/*.{h,m}'
         ss.requires_arc = true
         ss.subspec 'AXButton' do |sss|
             sss.source_files = 'AXKit/AXUIKit/AXButton/*.{h,m}'
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
     end
     
     s.subspec 'AXObject' do |ss|
-        ss.source_files = 'AXKit/AXObject/**/*.{h,m}'
+        ss.source_files = 'AXKit/AXObject/*.{h,m}'
         ss.requires_arc = true
         
         ss.subspec 'AXDefine' do |sss|
