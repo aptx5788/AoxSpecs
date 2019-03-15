@@ -36,6 +36,11 @@ Pod::Spec.new do |s|
             sss.source_files = 'AXKit/AXUIKit/AXCollectionView/*.{h,m}'
             sss.requires_arc = true
         end
+
+        ss.subspec 'AXView' do |sss|
+            sss.source_files = 'AXKit/AXUIKit/AXView/*.{h,m}'
+            sss.requires_arc = true
+        end
     end
     
     s.subspec 'AXObject' do |ss|
