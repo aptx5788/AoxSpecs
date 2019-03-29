@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
         end
 
         ss.subspec 'AXTheme' do |sss|
-            sss.source_files = 'AXKit/AXObject/AXTheme/*.{h,m}'
+            sss.source_files = 'AXKit/AXObject/AXTheme/*.'
             sss.requires_arc = true
         end
         
