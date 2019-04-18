@@ -90,7 +90,7 @@ sss.requires_arc = true
 end
 
 ss.subspec 'AXTheme' do |sss|
-sss.source_files = 'AXKit/AXObject/AXTheme/**'
+sss.source_files = 'AXKit/AXObject/AXTheme/**/*'
 sss.requires_arc = true
 end
 
