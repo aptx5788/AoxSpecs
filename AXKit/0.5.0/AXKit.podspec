@@ -52,11 +52,7 @@ Pod::Spec.new do |s|
             sss.source_files = 'AXKit/AXUIKit/AXScrollView/*.{h,m}'
             sss.requires_arc = true
         end
-        
-        ss.subspec 'AXSlideCover' do |sss|
-            sss.source_files = 'AXKit/AXUIKit/AXSlideCover/*.{h,m}'
-            sss.requires_arc = true
-        end
+
         
     end
     
