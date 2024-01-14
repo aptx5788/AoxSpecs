@@ -15,3 +15,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'ADTwin' => ['ADTwin/Classes/Assets/*']
   }
+end
