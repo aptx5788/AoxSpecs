@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.homepage         = 'https://github.com/aptx5788/AXRouter'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'aptx5788' => 'aptx5788@gmail.com' }
-    s.source           = { :git => 'https://github.com/aptx5788/AXRouter.git', :tag => s.version.to_s }
+    s.source           = { :git => 'git@github.com:aptx5788/AXRouter.git', :tag => s.version.to_s }
     s.ios.deployment_target = '16.0'
     s.source_files = 'AXRouter/**/*.{h,m}'
     s.resource_bundles = {
